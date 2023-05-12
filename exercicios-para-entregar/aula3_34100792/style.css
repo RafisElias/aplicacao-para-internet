@@ -1,0 +1,47 @@
+:root {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cls-neutral-100);
+  background-color: var(--cls-neutral-300);
+
+  --cls-red: hsl(0, 78%, 62%);
+  --cls-cyan: hsl(180, 62%, 55%);
+  --cls-orange: hsl(34, 97%, 64%);
+  --cls-blue: hsl(212, 86%, 64%);
+
+  --cls-neutral-100: hsl(234, 12%, 34%);
+  --cls-neutral-200: hsl(229, 6%, 66%);
+  --cls-neutral-300: hsl(0, 0%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-inline: auto;
+  min-height: 100vh;
+  width: min(100%, 1141px);
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cls-neutral-100);
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1.15rem;
+}

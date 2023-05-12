@@ -1,0 +1,201 @@
+:root {
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
+
+  --cls-header: #006699;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  width: min(100%, 80rem);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+  column-gap: 2rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  color: inherit;
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button {
+  font: inherit;
+}
+
+fieldset,
+legend {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+legend {
+  font-size: 1.15rem;
+}
+
+header {
+  padding: 8rem 0 1rem 1.5rem;
+  background-color: var(--cls-header);
+  color: #ffffff;
+  text-align: left;
+}
+
+header h1 {
+  margin-top: auto;
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  padding-block: 1rem;
+}
+
+.menu {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
+  margin-left: -1px;
+}
+
+.menu--item {
+  flex-grow: 1;
+  padding: 0.475rem 1rem;
+  flex-basis: auto;
+  position: relative;
+}
+
+.menu--item a::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  inset: 0;
+  margin-inline: auto;
+  margin-top: auto;
+  background-color: red;
+  position: absolute;
+  transition: width 500ms;
+}
+
+.menu--item a:hover::after {
+  content: "";
+  width: 80%;
+}
+
+.menu--item a {
+  text-align: center;
+  /* width: 100%; */
+  margin-inline: auto;
+  display: block;
+}
+
+.menu--item:not(:last-child) {
+  border-right: 1px solid #cccccc;
+}
+
+form {
+  padding-bottom: 1rem;
+}
+
+fieldset > * + * {
+  margin-top: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field > * + * {
+  margin-top: 0.25rem;
+}
+
+.field label,
+.field-radio label {
+  font-size: 1.15rem;
+}
+
+.field input,
+.field select {
+  height: 44px;
+  padding-inline: 1rem;
+}
+
+.field textarea {
+  margin-top: 1.15rem;
+  padding-inline: 1rem;
+}
+
+button {
+  border: none;
+  width: 100%;
+  padding: 1.25rem 1rem;
+}
+
+
+.post > * + * {
+  margin-top: 1.5rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+}
+
+hr {
+  margin-block: .95rem;
+}
+
+footer {
+  border-top: 2px solid black;
+  padding-block: 1rem;
+}

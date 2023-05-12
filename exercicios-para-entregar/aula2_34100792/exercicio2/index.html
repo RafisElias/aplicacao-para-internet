@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imobilia</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      .container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "quem-somos quem-somos quem-somos"
+          "vendas vendas vendas"
+          ;
+      }
+
+      .quem-somos {
+        grid-area: quem-somos;
+      }
+
+      .vendas {
+        grid-area: vendas;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="./comprar.html"">Comprar</a></li>
+        <li><a href="./alugar.html">Alugar</a></li>
+        <li><a href="./bairros.html">Bairros</a></li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <img src="./images/banner.jpg" alt="" style="width: 100%" />
+    </div>
+
+    <main class="container">
+      <section class="quem-somos">
+        <h2>Quem nós somos?</h2>
+        <p>
+          Somos uma imobiliária dedicada a ajudar nossos clientes a encontrar o
+          lar perfeito para suas necessidades. Nós entendemos que a compra ou
+          aluguel de uma propriedade é uma das decisões mais importantes que
+          alguém pode fazer em suas vidas, e é por isso que trabalhamos
+          incansavelmente para tornar o processo o mais fácil e agradável
+          possível.
+        </p>
+
+        <p>
+          Com anos de experiência no mercado imobiliário, nossa equipe está
+          pronta para ajudar nossos clientes a encontrar a casa ou apartamento
+          de seus sonhos. Temos uma ampla variedade de opções em nossa carteira
+          de imóveis, desde apartamentos compactos até grandes propriedades de
+          luxo, e trabalhamos para entender as necessidades e desejos de cada
+          cliente para encontrar a propriedade ideal.
+        </p>
+
+        <p>
+          Nós acreditamos em fornecer um atendimento excepcional aos nossos
+          clientes, e nossa equipe é altamente treinada e dedicada a fornecer um
+          serviço personalizado. Desde a primeira consulta até a conclusão do
+          processo, nossa equipe está pronta para ajudar nossos clientes em
+          todas as etapas do caminho.
+        </p>
+
+        <p>
+          Além de ajudar nossos clientes a encontrar suas casas ideais, também
+          oferecemos serviços de gestão de propriedades, para garantir que
+          nossos clientes recebam o suporte necessário para manter suas
+          propriedades em ótimo estado.
+        </p>
+
+        <p>
+          Em resumo, somos uma imobiliária dedicada a ajudar nossos clientes a
+          encontrar o lugar perfeito para chamar de lar, e estamos comprometidos
+          em fornecer um atendimento excepcional e serviços de alta qualidade em
+          todas as etapas do caminho.
+        </p>
+      </section>
+
+      <section class="vendas">
+        <article>
+          <h2>Aluguel</h2>
+          <img src="./images/aluguel.jpg" alt="" />
+          <p>
+            Nosso processo de aluguel é simples e eficiente. Primeiro,
+            trabalhamos com nossos clientes para entender suas necessidades e
+            desejos, para que possamos ajudá-los a encontrar a propriedade
+            perfeita. Em seguida, garantimos que todos os documentos necessários
+            estejam em ordem e que o contrato de locação esteja claro e justo
+            para ambas as partes. Durante todo o processo, nossa equipe está
+            pronta para responder a quaisquer dúvidas ou preocupações que os
+            clientes possam ter. Por fim, oferecemos um serviço de gestão de
+            propriedades para garantir que o aluguel seja realizado sem
+            problemas e que a propriedade seja mantida em ótimo estado durante
+            todo o período de locação.
+          </p>
+        </article>
+        <article>
+          <h2>Compra</h2>
+          <img src="./images/compra.jpg" alt="" />
+          <p>
+            Para a venda de imóveis, trabalhamos em estreita colaboração com os
+            proprietários para garantir que o processo seja o mais eficiente e
+            lucrativo possível. Começamos avaliando a propriedade e fornecendo
+            uma estimativa precisa do valor de mercado. Em seguida, criamos uma
+            estratégia de marketing personalizada, que inclui anúncios em nossos
+            canais de publicidade, para atrair potenciais compradores. Durante o
+            processo de venda, nossa equipe gerencia as visitas à propriedade,
+            negociações e fornece orientações e suporte aos proprietários para
+            garantir que eles tomem as melhores decisões possíveis. Além disso,
+            oferecemos serviços de gestão de propriedades, para garantir que a
+            propriedade seja mantida em ótimo estado e apresentada de forma
+            atraente aos potenciais compradores. O objetivo da nossa equipe é
+            ajudar os proprietários a alcançar seus objetivos de venda de forma
+            rápida, eficiente e lucrativa.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      15/04/2023 - Rafael Elias Tavares Prates Niza - 34100792 - Ciências da
+      Computação (Noturno)
+    </footer>
+  </body>
+</html>

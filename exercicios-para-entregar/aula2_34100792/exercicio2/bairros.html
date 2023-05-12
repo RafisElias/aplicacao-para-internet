@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bairros de São Paulo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        grid-column: 1/-1;
+      }
+
+      main > section:last-child {
+        grid-column: 1/-1;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./comprar.html">Comprar</a></li>
+        <li><a href="./alugar.html">Alugar</a></li>
+        <li><a href="#">Bairros</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <img src="./images/banner.jpg" alt="" style="width: 100%" />
+    </div>
+
+    <main>
+      <h1>Bairros de São Paulo</h1>
+      <section>
+        <h2>Norte</h2>
+        <table>
+          <tr>
+            <th>Bairro</th>
+            <th>Média de Aluguel</th>
+            <th>Média de Venda</th>
+          </tr>
+          <tr>
+            <td>Santana</td>
+            <td>R$ 2.500</td>
+            <td>R$ 750.000</td>
+          </tr>
+          <tr>
+            <td>Tucuruvi</td>
+            <td>R$ 2.000</td>
+            <td>R$ 600.000</td>
+          </tr>
+
+          <tr>
+            <td>Vila Maria</td>
+            <td>R$ 1.800</td>
+            <td>R$ 500.000</td>
+          </tr>
+          <tr>
+            <td>Jaçanã</td>
+            <td>R$ 1.500</td>
+            <td>R$ 400.000</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Leste</h2>
+        <table>
+          <tr>
+            <th>Bairro</th>
+            <th>Média de Aluguel</th>
+            <th>Média de Venda</th>
+          </tr>
+          <tr>
+            <td>Tatuapé</td>
+            <td>R$ 2.200</td>
+            <td>R$ 600.000</td>
+          </tr>
+          <tr>
+            <td>Mooca</td>
+            <td>R$ 2.000</td>
+            <td>R$ 550.000</td>
+          </tr>
+          <tr>
+            <td>Vila Prudente</td>
+            <td>R$ 1.800</td>
+            <td>R$ 500.000</td>
+          </tr>
+          <tr>
+            <td>Carrão</td>
+            <td>R$ 1.500</td>
+            <td>R$ 400.000</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Oeste</h2>
+        <table>
+          <tr>
+            <th>Bairro</th>
+            <th>Média de Aluguel</th>
+            <th>Média de Venda</th>
+          </tr>
+          <tr>
+            <td>Pinheiros</td>
+            <td>R$ 3.000</td>
+            <td>R$ 1.000.000</td>
+          </tr>
+          <tr>
+            <td>Butantã</td>
+            <td>R$ 2.500</td>
+            <td>R$ 800.000</td>
+          </tr>
+          <tr>
+            <td>Lapa</td>
+            <td>R$ 2.000</td>
+            <td>R$ 650.000</td>
+          </tr>
+          <tr>
+            <td>Pompeia</td>
+            <td>R$ 2.200</td>
+            <td>R$ 700.000</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Sul</h2>
+        <table>
+          <tr>
+            <th>Bairro</th>
+            <th>Média de Aluguel</th>
+            <th>Média de Venda</th>
+          </tr>
+          <tr>
+            <td>Morumbi</td>
+            <td>R$ 3.500</td>
+            <td>R$ 1.200.000</td>
+          </tr>
+          <tr>
+            <td>Vila Mariana</td>
+            <td>R$ 2.500</td>
+            <td>R$ 800.000</td>
+          </tr>
+          <tr>
+            <td>Moema</td>
+            <td>R$ 3.000</td>
+            <td>R$ 1.000.000</td>
+          </tr>
+          <tr>
+            <td>Brooklin</td>
+            <td>R$ 3.500</td>
+            <td>R$ 1.200.000</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Centro</h2>
+        <table>
+          <tr>
+            <th>Bairro</th>
+            <th>Média de Aluguel</th>
+            <th>Média de Venda</th>
+          </tr>
+          <tr>
+            <td>Consolação</td>
+            <td>R$ 2.500</td>
+            <td>R$ 800.000</td>
+          </tr>
+          <tr>
+            <td>República</td>
+            <td>R$ 2.000</td>
+            <td>R$ 600.000</td>
+          </tr>
+          <tr>
+            <td>Centro Histórico</td>
+            <td>R$ 2.500</td>
+            <td>R$ 800.000</td>
+          </tr>
+          <tr>
+            <td>Bela Vista</td>
+            <td>R$ 2.500</td>
+            <td>R$ 800.000</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      15/04/2023 - Rafael Elias Tavares Prates Niza - 34100792 - Ciências da
+      Computação (Noturno)
+    </footer>
+  </body>
+</html>

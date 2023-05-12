@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página 2 (iframe)</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      iframe {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="--cls-header: #663366">
+      <h1>Página 2</h1>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li class="menu--item"><a href="./index.html">Home</a></li>
+        <li class="menu--item"><a href="./blog.html">Blog (áudio)</a></li>
+        <li class="menu--item">
+          <a href="./pagina1.html">Página 1 (vídeo)</a>
+        </li>
+        <li class="menu--item">
+          <a href="#">Página 2 (iframe)</a>
+        </li>
+        <li class="menu--item"><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Vídeo youtube</h2>
+        <br />
+        <br />
+        <iframe
+          class="youtube-video"
+          width="2501"
+          height="783"
+          src="https://www.youtube.com/embed/qYFtDGpV-z4"
+          title="ARKANE Lore - Dishonored and the Art of Nonviolence"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr />
+      <section>
+        <h2>Arquivo html</h2>
+        <iframe src="./index.html" height="200" frameborder="0"></iframe>
+      </section>
+      <hr>
+      <section>
+        <h2>Site</h2>
+        <iframe src="https://g1.globo.com/" height="200" frameborder="0"></iframe>
+      </section>
+    </main>
+    <br />
+    <footer>©2023 AI</footer>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Imóveis à venda</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h1 {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      main > h1 {
+        grid-column: 1/-1;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      figure {
+        margin: 20px;
+        text-align: center;
+      }
+
+      figcaption {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="#">Comprar</a></li>
+        <li><a href="./alugar.html">Alugar</a></li>
+        <li><a href="./bairros.html">Bairros</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <img src="./images/banner.jpg" alt="" style="width: 100%" />
+    </div>
+    <main>
+      <h1>Imóveis à venda</h1>
+      <section>
+        <figure>
+          <img src="./images/casa1.jpg" alt="Casa à venda" width="500" />
+          <figcaption>Casa com 3 quartos e piscina</figcaption>
+        </figure>
+        <p>
+          Casa de luxo com 3 quartos, sala de estar espaçosa e cozinha moderna.
+          Além disso, possui uma piscina grande e um jardim bem cuidado.
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <img
+            src="./images/apartamento1.jpg"
+            alt="Apartamento à venda"
+            width="500"
+          />
+          <figcaption>Apartamento com vista para o mar</figcaption>
+        </figure>
+        <p>
+          Apartamento espaçoso com vista para o mar, 2 quartos, sala de estar e
+          cozinha integradas e varanda com vista para a praia.
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <img src="./images/casa2.jpg" alt="Casa à venda" width="500" />
+          <figcaption>Casa com vista para a montanha</figcaption>
+        </figure>
+        <p>
+          Casa de campo com vista para a montanha, 4 quartos, cozinha gourmet e
+          área externa com churrasqueira.
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <img
+            src="./images/apartamento2.jpg"
+            alt="Apartamento à venda"
+            width="500"
+          />
+          <figcaption>Apartamento no centro da cidade</figcaption>
+        </figure>
+        <p>
+          Apartamento moderno no centro da cidade, próximo a restaurantes e
+          lojas. Possui 1 quarto, cozinha equipada e varanda com vista para a
+          rua movimentada.
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <img src="./images/casa3.jpg" alt="Casa à venda" width="500" />
+          <figcaption>Casa em condomínio fechado</figcaption>
+        </figure>
+        <p>
+          Casa em condomínio fechado, com segurança 24 horas, 3 quartos, ampla
+          sala de estar e cozinha com armários planejados.
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <img src="./images/casa2.jpg" alt="Casa à venda" width="500" />
+          <figcaption>Casa com vista para a montanha</figcaption>
+        </figure>
+        <p>
+          Casa de campo com vista para a montanha, 4 quartos, cozinha gourmet e
+          área externa com churrasqueira.
+        </p>
+      </section>
+    </main>
+    <footer>
+      15/04/2023 - Rafael Elias Tavares Prates Niza - 34100792 - Ciências da
+      Computação (Noturno)
+    </footer>
+  </body>
+</html>

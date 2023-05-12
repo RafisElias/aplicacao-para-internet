@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receita</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      ol,
+      ul {
+        list-style-position: inside;
+        font-size: 1.15rem;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      }
+
+      section li {
+        margin-top: 1rem;
+      }
+
+      section li::marker {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./index.html"> Home </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="#"> Receita </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./video.html"> Vídeo </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./contato.html"> Contato </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header><h1>Como fazer uma lasanha</h1></header>
+
+    <main>
+      <section>
+        <article>
+          <h2>Ingredientes</h2>
+
+          <ul>
+            <li>500g de massa de lasanha pré-cozida;</li>
+            <li>500g de carne moída;</li>
+            <li>1 cebola picada;</li>
+            <li>2 dentes de alho picados;</li>
+            <li>1 lata de molho de tomate;</li>
+            <li>Sal e pimenta-do-reino a gosto;</li>
+            <li>1 caixa de creme de leite;</li>
+            <li>300g de queijo mussarela ralado;</li>
+            <li>100g de queijo parmesão ralado.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Modo de preparo</h2>
+          <ol>
+            <li>Preaqueça o forno a 180°C.</li>
+            <li>
+              Em uma panela, refogue a cebola e o alho em um pouco de óleo até
+              ficarem dourados.
+            </li>
+            <li>
+              Adicione a carne moída e frite até que esteja completamente
+              cozida.
+            </li>
+            <li>
+              Acrescente o molho de tomate, sal e pimenta-do-reino a gosto,
+              misture bem e deixe cozinhar por alguns minutos.
+            </li>
+            <li>
+              Em uma tigela, misture o creme de leite com o queijo mussarela
+              ralado.
+            </li>
+            <li>
+              Em uma assadeira, monte as camadas da lasanha: comece com uma
+              camada de molho de carne, seguida por uma camada de massa de
+              lasanha, uma camada da mistura de creme de leite e queijo
+              mussarela e uma camada de queijo parmesão ralado. Repita as
+              camadas até terminar os ingredientes, finalizando com uma camada
+              de queijo parmesão ralado.
+            </li>
+            <li>
+              Cubra a assadeira com papel-alumínio e leve ao forno por cerca de
+              40 minutos.
+            </li>
+            <li>
+              Retire o papel-alumínio e deixe gratinar por mais 10 minutos ou
+              até que o queijo esteja completamente derretido e dourado.
+            </li>
+            <li>Sirva quente e aproveite!</li>
+          </ol>
+        </article>
+
+        <article>
+          <h2>Receita em áudio</h2>
+          <audio
+            src="./assets/-_PONPONPON__Kyary_Pamyu_Pamyu_-_PONPONPON.mp3"
+            controls
+            style="width: 100%; display: flex"
+          ></audio>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

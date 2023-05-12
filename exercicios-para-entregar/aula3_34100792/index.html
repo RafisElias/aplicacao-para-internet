@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+      }
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 3rem;
+      }
+
+      .link-item {
+        position: relative;
+        box-shadow: 0 0 10px 3px hsl(0, 0%, 90%);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .link-item a {
+        padding: 5rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: var(--cls-neutral-100);
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: hsl(0, 0%, 100%);
+      }
+
+      .link-item:hover {
+        box-shadow: 0 0 12px 3px hsl(0, 0%, 85%);
+      }
+
+      .link-item::before {
+        content: "";
+        height: 0px;
+        width: 4px;
+        position: absolute;
+        inset: 0;
+        margin-left: auto;
+        transition: height 100ms ease 200ms;
+      }
+
+      .link-item:hover::before {
+        height: 100%;
+        transition: height 100ms ease 0ms;
+      }
+
+      .link-item::after {
+        content: "";
+        height: 4px;
+        width: 0px;
+        position: absolute;
+        inset: 0;
+        margin-top: auto;
+        margin-left: auto;
+        transition: width 100ms ease 100ms;
+      }
+
+      .link-item:hover::after {
+        width: 100%;
+        transition: width 100ms ease 100ms;
+      }
+
+      .left-border {
+        position: absolute;
+        width: 4px;
+        height: 0px;
+        inset: 0;
+        margin-top: auto;
+        transition: height 100ms ease 0ms;
+      }
+
+      .link-item:hover .left-border {
+        transition: height 100ms ease 200ms;
+        height: 100%;
+      }
+
+      .link-item:nth-child(1) {
+        border-top: 4px solid var(--cls-cyan);
+      }
+
+      .link-item:nth-child(1)::before,
+      .link-item:nth-child(1)::after,
+      .link-item:nth-child(1) .left-border {
+        background-color: var(--cls-cyan);
+      }
+
+      .link-item:nth-child(2) {
+        border-top: 4px solid var(--cls-red);
+      }
+
+      .link-item:nth-child(2)::before,
+      .link-item:nth-child(2)::after,
+      .link-item:nth-child(2) .left-border {
+        background-color: var(--cls-red);
+      }
+
+      .link-item:nth-child(3) {
+        border-top: 4px solid var(--cls-orange);
+      }
+
+      .link-item:nth-child(3)::before,
+      .link-item:nth-child(3)::after,
+      .link-item:nth-child(3) .left-border {
+        background-color: var(--cls-orange);
+      }
+
+      .link-item:nth-child(4) {
+        border-top: 4px solid var(--cls-blue);
+      }
+
+      .link-item:nth-child(4)::before,
+      .link-item:nth-child(4)::after,
+      .link-item:nth-child(4) .left-border {
+        background-color: var(--cls-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bem vindo ao Site</h1>
+    <nav>
+      <ul>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="#"> Home </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./receita.html"> Receita </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./video.html"> Vídeo </a>
+        </li>
+        <li class="link-item">
+          <span aria-hidden="true" class="left-border"></span>
+          <a href="./contato.html"> Contato </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

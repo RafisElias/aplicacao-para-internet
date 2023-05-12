@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header style="--cls-header: #993333">
+      <h1>Contato</h1>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li class="menu--item"><a href="./index.html">Home</a></li>
+        <li class="menu--item"><a href="./blog.html">Blog (áudio)</a></li>
+        <li class="menu--item">
+          <a href="./pagina1.html">Página 1 (vídeo)</a>
+        </li>
+        <li class="menu--item">
+          <a href="./pagina2.html">Página 2 (iframe)</a>
+        </li>
+        <li class="menu--item"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Entre em contato conosco</h2>
+      <form>
+        <fieldset>
+          <legend>Preencha o formulário abaixo:</legend>
+          <div class="field">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Seu nome aqui"
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <fieldset class="field-radio">
+            <legend>Sexo:</legend>
+            <div class="radio-label">
+              <input type="radio" name="sex" value="male" id="male" />
+              <label for="male">Masculino</label>
+            </div>
+            <div class="radio-label">
+              <input type="radio" name="sex" value="female" id="female" />
+              <label for="female">Feminino</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <!-- <label for="assunto">Assunto:</label> -->
+            <select name="assunto" id="assunto">
+              <option value="" selected>Selecione a opção</option>
+              <option value="assunto">Blog</option>
+              <option value="video">Video</option>
+              <option value="email">Email</option>
+            </select>
+
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button>ENVIAR</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>©2023 AI</footer>
+  </body>
+</html>

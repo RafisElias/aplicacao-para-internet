@@ -1,0 +1,117 @@
+:root {
+  --cls-dark: hsl(217, 54%, 11%);
+  --cls-white: hsl(0, 0%, 100%);
+  --cls-accent: hsl(215, 32%, 27%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  width: min(100%, 75rem);
+  margin-inline: auto;
+}
+
+header,
+footer {
+  background-color: var(--cls-dark);
+  color: var(--cls-white);
+  padding: 2rem 1rem;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+.profile {
+  display: grid;
+  grid-template-columns: auto 2fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.profile--img {
+  width: 200px;
+  border-radius: 1rem;
+  transition: transform ease-in 300ms;
+  cursor: pointer;
+}
+
+.profile--img:hover {
+  transform: rotate(360deg) scale(.7);
+}
+
+.profile--personal-info > * + * {
+  margin-top: 0.75rem;
+}
+
+.profile--personal-info {
+  margin-top: 1rem;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+
+.about-me {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-list {
+  font-size: 1rem;
+  padding-left: 2rem;
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+}
+
+.skill-list > li + li {
+  margin-top: .5rem;
+}
+
+.skill-item::marker {
+  color: var(--cls-accent);
+}
+
+footer {
+  text-align: center;
+}

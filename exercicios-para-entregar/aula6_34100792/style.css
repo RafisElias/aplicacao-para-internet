@@ -1,0 +1,60 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin-inline: auto;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: .3rem;
+}
+
+hr {
+  margin-block: 1rem;
+  border-width: 1.75px;
+  border-style: solid;
+}
+
+header {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding-block: .7rem;
+  border-radius: 100vmax;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.lugar {
+  border: 2px solid gainsboro;
+  padding: .5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.lugar-nome {
+  margin-bottom: 1rem;
+}
+
+.lugar-descricao {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
