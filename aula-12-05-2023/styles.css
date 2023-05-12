@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+html {
+  color-scheme: light dark;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -22,11 +26,13 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   font-weight: 400;
   width: min(100%, 75rem);
   margin-inline: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 header,
@@ -34,10 +40,6 @@ footer {
   background-color: var(--cls-dark);
   color: var(--cls-white);
   padding: 2rem 1rem;
-}
-
-main {
-  flex: 1;
 }
 
 img {
@@ -89,7 +91,7 @@ img {
 
 .about-me {
   height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .title {
